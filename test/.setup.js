@@ -1,8 +1,25 @@
+
+/* Register Babel for ES6 transpilation */
+
 require('babel-register')();
 
-var jsdom = require('jsdom').jsdom;
+/* Forbid transpiler to require files with below mentioned extensions */
 
-var exposedProperties = ['window', 'navigator', 'document'];
+require.extensions['.css'] = function () {
+	return null;
+};
+require.extensions['.png'] = function () {
+  return null;
+};
+require.extensions['.jpg'] = function () {
+  return null;
+};
+
+/* Setup jsdom */
+
+let jsdom = require('jsdom').jsdom;
+
+let exposedProperties = ['window', 'navigator', 'document'];
 
 global.document = jsdom('');
 global.window = document.defaultView;
@@ -18,13 +35,3 @@ global.navigator = {
 };
 
 documentRef = document;
-
-require.extensions['.css'] = function () {
-	return null;
-};
-require.extensions['.png'] = function () {
-  return null;
-};
-require.extensions['.jpg'] = function () {
-  return null;
-};
