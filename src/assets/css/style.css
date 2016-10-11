@@ -1,0 +1,190 @@
+body {
+  margin-top: 20px;
+  background: #D7DBD6;
+  margin-bottom: 5%;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.column {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.left-box {
+  padding-left: 0;
+  padding-right: 0;
+  border-right: 1px solid #DDDDDD;
+}
+
+.right-box {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.col-inside {
+  overflow: hidden;
+  outline: none;
+}
+
+.chat {
+  height: calc(100vh - 85px);
+}
+
+.decor-default {
+  background-color: #FFFFFF;
+}
+
+.default-panel {
+  background: #F5F1EE;
+  height: 12.5%;
+}
+
+.default-panel .input-group {
+  padding: 1.2em;
+}
+
+.default-panel input {
+  border: none;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+.search-box {
+  background-color: #FBFBFB;
+  height: 10%;
+  padding: 13px;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.search-box .input-group {
+  width: 100%;
+}
+
+.search-box input {
+  border: none;
+  border-radius: 0;
+  display: block;
+  width: 100%;
+  padding: 3%;
+}
+
+.thread-list {
+  height: 77.5%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.thread {
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.input-group-unstyled .input-group-addon {
+  border-radius: 4px;
+  border: 0px;
+  background-color: transparent;
+}
+
+.panel-avatar, .thread-name {
+  padding-top: 10px;
+}
+
+.chat-thread-name, .thread-panel-icon {
+  padding-top: 20px;
+}
+
+.chat-body {
+  height: 75%;
+  width: 100%;
+  position: relative;
+}
+
+.chat-body .chat-body-scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px;
+  max-height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.default-message .text {
+  padding: 12px;
+  font-size: 14px;
+  line-height: 22px;
+  position: relative;
+}
+
+.left-message .text {
+  background: #EBEBEB;
+  color: #333333;
+  border-radius: 8px 8px 8px 0;
+}
+
+.right-message .text {
+  background: #7266BA;
+  color: #FFFFFF;
+  border-radius: 8px 8px 0 8px;
+}
+
+.chat-body .chat-body-scroll .row {
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+}
+
+.avatar img {
+  display: block;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.thread .name {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+a.active .thread{
+  background: #DDDDDD;
+}
+
+@media (max-width : 479px) {
+  .chat {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 480px) and (max-width : 767px) {
+  .chat {
+    height: 200vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width : 991px) {
+  .chat {
+    height: 60vh;
+  }
+}
