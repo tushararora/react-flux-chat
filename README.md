@@ -1,5 +1,8 @@
 # react-flux-chat (whatsapp-web-demo)
 
+## Setup
+Download current version of Node.js [here](https://nodejs.org/en/) (v6.7.0)
+
 ## Installation
 
 ``` 
